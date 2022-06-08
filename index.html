@@ -5,6 +5,13 @@
 
 <!-- Style block -->
 <style>
+
+  body {
+      background: white;
+      text-align: center;
+      font-family: Arial;
+  }
+
   /* Link colors */
   a:link {
     color: black;
@@ -29,16 +36,38 @@
       bottom: 5%;
       font-family: Arial;
 }
+
+  @media (prefers-color-scheme: dark) {
+      /* If the operating system is using dark mode, then apply this CSS */
+      body {
+        background: #0f0f0f;
+        color: white;
+        text-align: center;
+        font-family: Arial;
+      }
+
+      /* Link colors */
+      a:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:visited {
+          color: white;
+          text-decoration: none;
+      }
+  }
+
 </style>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Project Penguin </title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/penguin-favicon.svg">
 </head>
 
 <body>
-    <div style="text-align:center; font-family:Arial">
+    <div>
       <img src="images/penguin-emoji.svg" alt="Penguin Emoji Logo" style="width:100px; height:100px;">
       <h1>Project Penguin</h1>
       <p>A work in progress.</p>
