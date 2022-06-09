@@ -34,11 +34,14 @@ div.cardholder {
     border-radius: 16px;
     width: 200px;
     height: auto;
+
   }
 
   img.card {
     width: 5em;
+    height: auto;
     align-content: center;
+
   }
 
   /* Link colors */
@@ -79,7 +82,7 @@ div.cardholder {
     border-color: black;
     border-radius: 15px;
     width: auto;
-    margin: 20px 5px 5px 5px;
+    margin: 5px 1px 5px 1px;
     padding: 5px 10px 5px 10px;
     font-family: Arial;
     font-weight: bold;
