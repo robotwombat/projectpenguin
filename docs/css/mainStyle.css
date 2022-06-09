@@ -9,18 +9,20 @@ body {
 }
 
 div.card {
-  margin: 0 auto;
-  padding: 2.5em 5em 2.5em 5em;
+  display: inline-block;
+  margin: 0em 1em 0em 1em;
+  padding: 2.5em 2.5em 2.5em 2.5em;
   background: #F0F9F9;
   border-width:2px;
   border-style:solid;
-  border-color:black;
+  border-color:blacks;
   border-radius: 16px;
-  width: max-content;
+  width: 200px;
+  height: auto;
 }
 
 img.card {
-  width: 7em;
+  width: 5em;
   align-content: center;
 }
 
@@ -47,6 +49,7 @@ a:hover.logo {
 
 footer {
   position: fixed;
+  padding-top: 5em;
   font-size: 0.85em;
   width: 100%;
   text-align: center;
