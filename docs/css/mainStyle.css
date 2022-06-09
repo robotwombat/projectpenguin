@@ -27,7 +27,6 @@ div.cardholder {
 }
 
 div.card {
-  position: relative;
   padding: 2.5em 2.5em 2.5em 2.5em;
   background: #F0F9F9;
   border-width: 2px;
