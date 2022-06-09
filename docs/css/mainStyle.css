@@ -125,6 +125,7 @@ hr {
 /* View for mobile devices */
 @media (max-width: 500px) {
   button.scrollTop {
+    display: none;
     position: fixed;
     right: 5%;
     bottom: 0;
@@ -142,7 +143,7 @@ hr {
     padding: 15px 10px 0px 10px;
     cursor: pointer;
     animation-name: sizein;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
 
