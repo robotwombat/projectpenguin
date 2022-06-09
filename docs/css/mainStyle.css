@@ -11,17 +11,20 @@ body {
 div.cardholder {
   display: inline-grid;
   grid-template-columns: 100%;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
 }
 
 @media (min-width: 500px) {
     div.cardholder {
       display: inline-grid;
       grid-template-columns: 50% 50%;
+      grid-column-gap: 10px;
+      grid-row-gap: 15px;
     }
   }
 
   div.card {
-    margin: 0em 1em 1em 1em;
     padding: 2.5em 2.5em 2.5em 2.5em;
     background: #F0F9F9;
     border-width: 2px;
