@@ -87,7 +87,7 @@ div.cardholder {
     font-family: Arial;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.2s;
   }
 
   button:hover {

@@ -38,7 +38,17 @@
       <img class="card" src="./images/phone-emoji.svg">
       <br>
       <h3> Template </h3>
-      <button type="button" onclick="window.location.href='roms.html'">General Information</button><br>
+      <p> These are some steps. <br>
+        For flashing the fastboot zip <br>
+        MAKE SURE YOU ARE ON LATEST VERSION OF PLATFORM TOOLS!<br>
+        1. Unlock bootloader<br>
+        2. Download the fastboot image of the rom (the zip file with "-img" in it)<br>
+        3. Boot to fastboot<br>
+        4. Type<br>
+        fastboot update location_of_zip_file<br>
+        (DO NOT use fastboot -w to wipe data, follow next step)<br>
+        5. Boot to inbuilt recovery if you are flashing for the first time and format data. (F2FS is preferred)<br>
+        6. Reboot.<br>
     </div>
   </div>
   <div id="footer"></div>
