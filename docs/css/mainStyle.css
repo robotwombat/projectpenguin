@@ -8,14 +8,19 @@ body {
   font-family: Arial;
 }
 
+div.cardholder {
+  display: flex;
+  justify-content: center;
+}
+
 div.card {
-  display: inline-block;
+  float: left;
   margin: 0em 1em 1em 1em;
   padding: 2.5em 2.5em 2.5em 2.5em;
   background: #F0F9F9;
   border-width:2px;
   border-style:solid;
-  border-color:blacks;
+  border-color:black;
   border-radius: 16px;
   width: 200px;
   height: auto;
