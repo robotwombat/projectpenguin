@@ -74,7 +74,8 @@ div.cardholder {
     text-align: center;
     background-color: white;
     color: black;
-    border-color: #004208;
+    border-style: solid;
+    border-color: black;
     border-radius: 15px;
     width: auto;
     margin: 20px 5px 5px 5px;
