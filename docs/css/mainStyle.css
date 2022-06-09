@@ -1,5 +1,6 @@
 :root {
   font-family: Arial;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
