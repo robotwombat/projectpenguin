@@ -9,7 +9,7 @@
   <!-- Scale page to display width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Load in header and footer -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(function(){
       var header = $("#header");
@@ -19,7 +19,7 @@
     });
   </script>
   <!-- Page title and favicons -->
-  <title> Android | Project Penguin </title>
+  <title> Project Penguin </title>
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
@@ -32,9 +32,24 @@
 </head>
 
 <body>
-  <div id="header" style="min-height: 221.367px"></div>
-  <div>
-    <h2>Android ROMs</h2>
+  <div id="header" style="min-height: 229px"></div>
+  <div class="cardholder">
+    <div class="card">
+      <img class="card" src="./images/phone-emoji.svg"
+      <br>
+      <h3> KOSP </h3>
+      <button type="button" onclick="window.location.href='roms.html'">Downloads</button><br>
+      <button type="button" onclick="window.location.href='roms.html'">Installation</button>
+      <button type="button" onclick="window.location.href='roms.html'">Telegram</button>
+    </div>
+    <div class="card">
+      <img class="card" src="./images/phone-emoji.svg"
+      <br>
+      <h3> YAAP </h3>
+      <button type="button" onclick="window.location.href='roms.html'">Downloads</button><br>
+      <button type="button" onclick="window.location.href='roms.html'">Installation</button>
+      <button type="button" onclick="window.location.href='roms.html'">Telegram</button>
+    </div>
   </div>
   <div id="footer"></div>
 </body>
