@@ -27,6 +27,7 @@ div.cardholder {
 }
 
 div.card {
+  position: relative;
   padding: 2.5em 2.5em 2.5em 2.5em;
   background: #F0F9F9;
   border-width: 2px;
@@ -35,6 +36,30 @@ div.card {
   border-radius: 16px;
   width: 200px;
   height: auto;
+}
+
+div.homecard {
+  position: relative;
+  padding: 2.5em 2.5em 2.5em 2.5em;
+  background: #F0F9F9;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 16px;
+  width: 200px;
+  height: auto;
+  animation-name: cardslide;
+  animation-duration: 1.5s;
+}
+
+@keyframes cardslide {
+  0% {
+    top: 500px;
+  }
+
+  100% {
+    top: 0px;
+  }
 }
 
 img.card {
