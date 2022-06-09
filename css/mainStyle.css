@@ -20,7 +20,12 @@ a:visited {
 }
 
 a:hover {
-  opacity: 0.5;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+a:hover.logo {
+  opacity: 1.0;
   text-decoration: none;
 }
 
@@ -44,6 +49,7 @@ button {
   padding: 5px 10px 5px 10px;
   font-family: Arial;
   font-weight: bold;
+  cursor: pointer;
 }
 
 hr {
