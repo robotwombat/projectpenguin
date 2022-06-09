@@ -60,6 +60,7 @@ div.cardholder {
 
   footer {
     padding-top: 5em;
+    padding-bottom: 2.5em;
     font-size: 0.85em;
     width: 100%;
     text-align: center;
@@ -87,7 +88,7 @@ div.cardholder {
     background-color: white;
   }
 
-/*  @media (prefers-color-scheme: dark) { 
+/*  @media (prefers-color-scheme: dark) {
     body {
       background: #0f0f0f;
       color: white;
