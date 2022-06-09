@@ -6,7 +6,14 @@
 <head>
   <link rel="stylesheet" href="../css/mainStyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Project Penguin </title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    $(function(){
+      $("#header").load("common/header.html");
+      $("#footer").load("common/footer.html");
+    });
+  </script>
+  <title> Android | Project Penguin </title>
   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
@@ -19,23 +26,13 @@
 </head>
 
 <body>
+  <div id="header"></div>
   <div>
-    <a class="logo" href="../index.html">
-      <img src="../images/penguin-emoji.svg" alt="Penguin Emoji Logo" style="width:100px; height:100px;">
-    </a>
-    <h1>Project Penguin</h1>
-    <p>A work in progress.</p>
-    <hr>
     <h2>Android ROMs</h2>
     <button type="button" onclick="window.location.href='https://github.com/robotwombat/redirector-privacy-config/releases/'">Redirector Configs</button>
     <button type="button" onclick="window.location.href='https://duckduckgo.com'">DuckDuckGo</button>
   </div>
+  <div id="footer"></div>
 </body>
-
-<footer>
-  <div>
-    <a href="https://github.com/robotwombat/projectpenguin"> Made with ❤️ by Robotwombat </a>
-  </div>
-</footer>
 
 </html>
