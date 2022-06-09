@@ -87,9 +87,7 @@ div.cardholder {
     background-color: white;
   }
 
-  @media (prefers-color-scheme: dark) {
-
-    /* If the operating system is using dark mode, then apply this CSS */
+/*  @media (prefers-color-scheme: dark) { 
     body {
       background: #0f0f0f;
       color: white;
@@ -97,7 +95,6 @@ div.cardholder {
       font-family: Arial;
     }
 
-    /* Link colors */
     a:link {
       color: white;
       text-decoration: none;
@@ -108,3 +105,4 @@ div.cardholder {
       text-decoration: none;
     }
   }
+  */
