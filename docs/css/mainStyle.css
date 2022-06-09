@@ -63,11 +63,10 @@ div.cardholder {
 
   footer {
     padding-top: 5em;
-    padding-bottom: 2.5em;
+    padding-bottom: 0.2em;
     font-size: 0.85em;
     width: 100%;
     text-align: center;
-    bottom: 5%;
     font-family: Arial;
   }
 
