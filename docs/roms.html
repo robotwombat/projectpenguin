@@ -14,8 +14,10 @@
     $(function(){
       var header = $("#header");
       var footer = $("#footer");
+      var scrolltop = $("#scrolltop");
       header.load("header.html");
       footer.load("footer.html");
+      scrolltop.load("scrolltop.html")
     });
   </script>
   <!-- Page title and favicons -->
@@ -32,6 +34,7 @@
 </head>
 
 <body>
+  <div id="scrolltop"></div>
   <div id="header" style="min-height: 229px"></div>
   <div class="cardholder">
     <div class="card">
