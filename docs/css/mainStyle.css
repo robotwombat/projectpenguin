@@ -89,6 +89,11 @@ div.cardholder {
     cursor: pointer;
   }
 
+  button:hover {
+    color: white;
+    background-color: black;
+  }
+
   hr {
     width: 30%;
     color: white;
