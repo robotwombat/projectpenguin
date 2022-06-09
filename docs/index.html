@@ -9,6 +9,7 @@
   <!-- Scale page to display width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Load in header and footer -->
+  <!--
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script>
     $(function(){
@@ -17,7 +18,7 @@
       header.load("header.html");
       footer.load("footer.html");
     });
-  </script>
+  </script> -->
   <!-- Page title and favicons -->
   <title> Project Penguin </title>
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
@@ -32,8 +33,8 @@
 </head>
 
 <body>
-  <div id="header" style="min-height: 229px">
-    <?php include('header.php'); ?>
+  <div style="min-height: 229px">
+    <?php include('header.php') ?>
   </div>
   <div>
     <button type="button" onclick="window.location.href='https://github.com/robotwombat/redirector-privacy-config/releases/'">Redirector Configs</button>
