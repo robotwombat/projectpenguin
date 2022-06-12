@@ -249,7 +249,7 @@ h4.cardtextheading {
   }
 }
 
-/*  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
       background: #0f0f0f;
       color: white;
@@ -266,5 +266,13 @@ h4.cardtextheading {
       color: white;
       text-decoration: none;
     }
+
+    div.card {
+      background: #163737;
+      border-color: black;
+    }
+
+    div.widercard {
+      background: #163737;
+    }
   }
-  */
