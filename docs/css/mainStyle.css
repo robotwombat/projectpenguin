@@ -60,9 +60,17 @@ a:hover {
   text-decoration: underline;
 }
 
-a:hover.logo {
+a:hover.headerlogo {
   opacity: 1.0;
   text-decoration: none;
+}
+
+img.headerlogo {
+  margin-top: 0.5em;
+}
+
+h1.headertitle {
+  margin-top: 0.3em;
 }
 
 footer {
