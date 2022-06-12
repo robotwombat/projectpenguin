@@ -8,15 +8,13 @@
   <link rel="stylesheet" href="css/mainStyle.css">
   <!-- Scale page to display width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Load in header and footer -->
+  <!-- Load in header -->
+  <iframe name="header" class="header" src="header.html"></iframe>
+  <!-- Load in scroll top button -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(function(){
-      var header = $("#header");
-      var footer = $("#footer");
       var scrolltop = $("#scrolltop");
-      header.load("header.html");
-      footer.load("footer.html");
       scrolltop.load("scrolltop.html")
     });
   </script>
@@ -44,7 +42,6 @@
       scrolltop.load("scrolltop.html")
     });
   </script>
-  <div id="header" style="min-height: 191.5px"></div>
   <div class="cardholder">
     <div class="widercard">
       <img class="card" src="./images/yaap-logo.jpg" style="border-radius:50%; border: 2px solid black">
@@ -84,7 +81,10 @@
       </p>
     </div>
   </div>
-  <div id="footer"></div>
+  <!-- Footer -->
+  <div class="footer">
+    <a href="https://github.com/robotwombat/projectpenguin" style="font-weight: normal;"> Made with ❤️ by Robotwombat </a>
+  </div>
 </body>
 
 </html>

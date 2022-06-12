@@ -10,6 +10,7 @@ body {
 }
 
 div.cardholder {
+  margin-top: 10px;
   display: inline-grid;
   grid-template-columns: 100%;
   grid-column-gap: 10px;
@@ -19,6 +20,7 @@ div.cardholder {
 /* View for desktops */
 @media (min-width: 500px) {
   div.cardholder {
+    margin-top: 10px;
     display: inline-grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 10px;
@@ -76,16 +78,33 @@ a:hover.headerlogo {
 }
 
 img.headerlogo {
-  margin-top: 0.5em;
+  margin-top: 0em;
+}
+
+embed.header {
+  width: 100%;
+  height: 13em;
+  min-height: 13em;
+}
+
+iframe.header {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 13em;
+  min-height: 13em;
+}
+
+p.header {
+  margin-bottom: 0;
 }
 
 h1.headertitle {
   margin-top: 0.3em;
 }
 
-footer {
+div.footer {
   padding-top: 5em;
-  padding-bottom: 0.2em;
   font-size: 0.85em;
   width: 100%;
   text-align: center;
