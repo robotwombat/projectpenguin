@@ -31,6 +31,17 @@ div.card {
   height: auto;
 }
 
+div.widercard {
+  padding: 2.5em 1em 2.5em 1em;
+  background: #F0F9F9;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 16px;
+  width: auto;
+  height: auto;
+}
+
 /* View for desktop */
 @media (min-width: 500px) {
   div.cardholder {
@@ -52,6 +63,16 @@ div.card {
     width: 200px;
     height: auto;
   }
+  div.widercard {
+    padding: 2.5em 1em 2.5em 1em;
+    background: #F0F9F9;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 16px;
+    width: 300px;
+    height: auto;
+  }
 }
 
 img.card {
@@ -60,16 +81,6 @@ img.card {
   align-content: center;
 }
 
-div.widercard {
-  padding: 2.5em 1em 2.5em 1em;
-  background: #F0F9F9;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 16px;
-  width: 300px;
-  height: auto;
-}
 /* Link colors */
 a:link {
   color: black;
