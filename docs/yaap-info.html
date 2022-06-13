@@ -45,7 +45,7 @@
         <h3 class="cardsectiontitle"> Installation </h3>
         <h4 class="cardtextheading"> Getting your computer ready </h4>
         <p class="cardtext"> If you're on Windows:<br>
-        <ul style="text-align: left;">
+        <ul>
           <li> Uninstall OnePlus drivers </li>
           <li> Check for and install all Windows updates</li>
           <li> Download Google's <a href="https://developer.android.com/studio/releases/platform-tools#downloads">Platform Tools</a></li>
@@ -54,13 +54,13 @@
         </p>
         <h4 class="cardtextheading"> Getting your phone ready </h4>
         <p class="cardtext">
-        <ul style="text-align: left;">
+        <ul>
           <li>You must first unlock the bootloader (Google this)</li>
         </ul>
         </p>
         <h4 class="cardtextheading"> Payload Dump </h4>
         <p class="cardtext"> Follow these steps closely: <br>
-        <ol style="text-align: left;">
+        <ol>
           <li>Download the <a href="https://mirror.codebucket.de/yaap/"> latest YAAP build </a> for your device.</li>
           <li>Download <a href="https://github.com/ssut/payload-dumper-go/releases">payload-dumper-go</a></li>
           <li>Go to your extracted Platform Tools folder and, while holding the Shift key, right-click and then open terminal</li>
@@ -70,7 +70,7 @@
         </p>
         <h4 class="cardtextheading"> Finally, installation </h4>
         <p class="cardtext"> Follow these steps closely: <br>
-        <ol style="text-align: left;">
+        <ol>
           <li>Put your phone into fastboot/bootloader</li>
           <li>From the Payload Dump, locate the following files depending on your device:</li>
           <ul>
@@ -91,11 +91,25 @@
       </div>
       <div class="cardsection">
         <h3 class="cardsectiontitle" id="report"> Report Bugs </h3>
-
       </div>
       <div class="cardsection">
         <h3 class="cardsectiontitle" id="magisk"> Magisk </h3>
-
+        <h4 class="cardtextheading"> Installing Magisk for the first time </h4>
+        <ol>
+          <li>Get boot.img by using #payload_dumper</li>
+          <li>Patch stock boot.img using the magisk app (copy it to your device)</li>
+          <li>Flash on fastboot with fastboot flash boot magisk_patched_xxx.img</li>
+        </ol>
+        <h4 class="cardtextheading"> Update via OTA and retain Magisk </h4>
+        <ul>
+          <li>Just OTA as usual and when OTA is done (before rebooting) install from magisk app to inactive slot.</li>
+        </ul>
+        <h4 class="cardtextheading"> Pass Safetynet </h4>
+        <ol>
+          <li>Fully add gms, gpay and play store to deny list</li>
+          <li>clear storage for gpay and play store (if doesn't work after reboot in 3. also clear gms)</li>
+          <li>Reboot</li>
+        </ol>
       </div>
       <div class="cardsection">
         <h3 class="cardsectiontitle" id="faqs"> FAQs </h3>

@@ -12,10 +12,12 @@ body {
 
 ol {
   line-height: 1.5;
+  text-align: left;
 }
 
 ul {
   line-height: 1.5;
+  text-align: left;
 }
 
 li {
