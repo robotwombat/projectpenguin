@@ -24,6 +24,12 @@ li {
   margin: 10px 0px 10px 0px;
 }
 
+hr.instructiondivider {
+  margin: none;
+  visibility: hidden;
+  margin: 0px;
+}
+
 div.cardholder {
   margin-top: 10px;
   display: inline-grid;
