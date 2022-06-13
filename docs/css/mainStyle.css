@@ -1,6 +1,7 @@
 :root {
   font-family: Arial;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,6 +43,22 @@ div.widercard {
   height: auto;
 }
 
+div.cardsection {
+  margin-top: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 16px;
+}
+
+h3.cardsectiontitle {
+  margin-top: 0;
+  background-color:black;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 0px 10px 0px;
+}
+
 /* View for desktop */
 @media (min-width: 500px) {
   div.cardholder {
@@ -70,7 +87,7 @@ div.widercard {
     border-style: solid;
     border-color: black;
     border-radius: 16px;
-    width: 300px;
+    width: 900px;
     height: auto;
   }
 }
@@ -262,17 +279,42 @@ h4.cardtextheading {
       text-decoration: none;
     }
 
+    a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
     a:visited {
       color: white;
       text-decoration: none;
     }
 
     div.card {
-      background: #163737;
+      background: #222;
       border-color: black;
     }
 
     div.widercard {
-      background: #163737;
+      background: #222;
+    }
+
+    button.scrolltop {
+      background-color: #0f0f0f;
+      color: white;
+    }
+
+    button {
+      background-color: #0f0f0f;
+      color: white;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    div.cardsection {
+      color: lightgrey;
+      background-color: #0f0f0f;
     }
   }
