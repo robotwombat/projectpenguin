@@ -8,6 +8,7 @@ body {
   background: white;
   text-align: center;
   font-family: Arial;
+  margin: 0px 0px 0px 0px;
 }
 
 ol {
@@ -26,10 +27,11 @@ li {
 
 div.header {
   width: auto;
-  margin: -10px -7.5px 1em -7.5px;
+  margin: 0px 1px 1em 1px;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
   border: 2px solid black;
+  border-top: 0px;
   background-color: #F0F9F9;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
@@ -60,6 +62,7 @@ div.cardholder {
 
 div.card {
   padding: 2.5em 2.5em 2.5em 2.5em;
+  margin: 0px 1em 0px 1em;
   background: #F0F9F9;
   border-width: 2px;
   border-style: solid;
@@ -71,6 +74,7 @@ div.card {
 
 div.widercard {
   padding: 2.5em 1em 2.5em 1em;
+  margin: 0px 0.5em 0px 0.5em;
   background: #F0F9F9;
   border-width: 2px;
   border-style: solid;
