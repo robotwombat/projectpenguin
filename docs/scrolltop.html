@@ -7,14 +7,7 @@
 </head>
 
 <body>
-<!--
-  <img src="./images/lock-key-emoji.svg" style="transform: size(150%)">
-  <img src="./images/lock-key-emoji.svg" style="transform: size(150%)">
-  <img src="./images/lock-key-emoji.svg" style="transform: size(150%)">
-  <img src="./images/lock-key-emoji.svg" style="transform: size(150%)">
--->
   <button id="scrollTop" class="scrollTop" type="button" onclick="topFunction()">^</button>
-
   <script>
     //Get the button:
     mybutton = document.getElementById("scrollTop");
@@ -23,7 +16,6 @@
     window.onscroll = function() {
       scrollFunction()
     };
-
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
@@ -34,7 +26,10 @@
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
-      window.scrollTo({top: 0, behavior: 'smooth'});
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   </script>
 </body>
