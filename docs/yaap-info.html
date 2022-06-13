@@ -53,31 +53,40 @@
         </ul>
         </p>
         <h4 class="cardtextheading"> Getting your phone ready </h4>
-        <p class="cardtext"> <ul style="text-align: left;">
+        <p class="cardtext">
+        <ul style="text-align: left;">
           <li>You must first unlock the bootloader (Google this)</li>
         </ul>
         </p>
         <h4 class="cardtextheading"> Payload Dump </h4>
         <p class="cardtext"> Follow these steps closely: <br>
-          1. Download the <a href="https://mirror.codebucket.de/yaap/"> latest YAAP build </a> for your device.<br>
-          2. Download <a href="https://github.com/ssut/payload-dumper-go/releases">payload-dumper-go</a><br>
-          3. Go to your extracted Platform Tools folder and, while holding the Shift key, right-click and then open terminal <br>
-          4. Drag the payload-dumper-go file into the terminal, click in the terminal window, press the Spacebar, and then drag the YAAP .zip file into the terminal. <br>
-          5. Press enter and wait until the script is done.<br>
+        <ol style="text-align: left;">
+          <li>Download the <a href="https://mirror.codebucket.de/yaap/"> latest YAAP build </a> for your device.</li>
+          <li>Download <a href="https://github.com/ssut/payload-dumper-go/releases">payload-dumper-go</a></li>
+          <li>Go to your extracted Platform Tools folder and, while holding the Shift key, right-click and then open terminal</li>
+          <li>Drag the payload-dumper-go file into the terminal, click in the terminal window, press the Spacebar, and then drag the YAAP .zip file into the terminal.</li>
+          <li>Press enter and wait until the script is done.</li>
+        </ol>
         </p>
         <h4 class="cardtextheading"> Finally, installation </h4>
         <p class="cardtext"> Follow these steps closely: <br>
-          1. Put your phone into fastboot/bootloader<br>
-          2. From the Payload Dump, locate the following files depending on your device:<br>
-          * (Hotdogb) recovery.img <br>
-          * (Other) boot.img <br>
+        <ol style="text-align: left;">
+          <li>Put your phone into fastboot/bootloader</li>
+          <li>From the Payload Dump, locate the following files depending on your device:</li>
+          <ul>
+            <li>(Hotdogb) <em class="code">recovery.img</em></li>
+            <li>(Other) <em class="code">boot.img</em></li>
+          </ul>
           Then be ready to drop this file in the terminal during the next step.<br>
-          3. Then, open a terminal and type the following, depending on your device:<br>
-          * (Hotdogb) fastboot flash recovery recovery.img<br>
-          * (Other) fastboot flash boot boot.img<br>
-          Then press enter and wait for the command to finish executing.<br>
-          4. Reboot to recovery by entering this command: fastboot reboot recovery<br>
-          5. In recovery, wipe system storage <Br>
+          <li>Then, open a terminal and type the following, depending on your device:</li>
+          <ul>
+            <li>(Hotdogb) <em class="code">fastboot flash recovery recovery.img</em></li>
+            <li>(Other) <em class="code">fastboot flash boot boot.img</em></li>
+          </ul>
+          Then press enter and wait for the command to finish executing.</li>
+          <li>Reboot to recovery by entering this command: fastboot reboot recovery</li>
+          <li>In recovery, wipe system storage</li>
+        </ol>
         </p>
       </div>
       <div class="cardsection">

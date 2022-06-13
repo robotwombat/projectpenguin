@@ -10,6 +10,18 @@ body {
   font-family: Arial;
 }
 
+ol {
+  line-height: 1.5;
+}
+
+ul {
+  line-height: 1.5;
+}
+
+li {
+  margin: 10px 0px 10px 0px;
+}
+
 div.cardholder {
   margin-top: 10px;
   display: inline-grid;
@@ -187,6 +199,14 @@ p.cardtext {
   margin-top: 0.3em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+em.code {
+  font-family: monospace;
+  background-color: white;
+  width: min-content;
+  font-style: normal;
+  font-size: 16.5px;
 }
 
 ol.cardtext{
