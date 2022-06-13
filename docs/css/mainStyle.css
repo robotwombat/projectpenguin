@@ -369,4 +369,9 @@ h4.cardtextheading {
       color: lightgrey;
       background-color: #0f0f0f;
     }
+
+    em.code {
+      color: black;
+      background-color: grey;
+    }
   }
