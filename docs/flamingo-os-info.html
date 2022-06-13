@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Created by robotwombat -->
+
+<head>
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="css/mainStyle.css">
+  <!-- Scale page to display width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Load in header -->
+  <iframe name="header" class="header" src="header.html"></iframe>
+  <!-- Load in scroll top button -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      var scrolltop = $("#scrolltop");
+      scrolltop.load("scrolltop.html")
+    });
+  </script>
+  <!-- Page title and favicons -->
+  <title> Flamingo OS | Project Penguin </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#33cdc6">
+  <meta name="apple-mobile-web-app-title" content="Project Penguin">
+  <meta name="application-name" content="Project Penguin">
+  <meta name="msapplication-TileColor" content="#33cdc6">
+  <meta name="theme-color" content="#33cdc6">
+</head>
+
+<body>
+  <div id="scrolltop"></div>
+  <div class="cardholder">
+    <div class="widercard">
+      <img class="card" src="./images/flamingo-temp-icon.svg" style="border-radius:50%; border: 2px solid black; background-color: pink;">
+      <h3> Flamingo OS </h3>
+      <button type="button" onclick="window.location.href='#install'">Install</button>
+      <button type="button" onclick="window.location.href='#report'">Report Bugs</button>
+      <button type="button" onclick="window.location.href='#magisk'">Magisk</button>
+      <button type="button" onclick="window.location.href='#faqs'">FAQs</button>
+      <div class="cardsection">
+        <h3 class="cardsectiontitle"> Installation </h3>
+        <h4 class="cardtextheading"> Getting your computer ready </h4>
+        <p class="cardtext"> If you're on Windows:<br>
+        <ul>
+          <li> Uninstall OnePlus drivers </li>
+          <li> Check for and install all Windows updates</li>
+          <li> Download Google's <a href="https://developer.android.com/studio/releases/platform-tools#downloads">Platform Tools</a></li>
+          <li> Extract the Platform Tools .zip and remember where you put it</li>
+        </ul>
+        </p>
+        <h4 class="cardtextheading"> Getting your phone ready </h4>
+        <p class="cardtext">
+        <ul>
+          <li>You must first unlock the bootloader (Google this)</li>
+        </ul>
+        </p>
+        <h4 class="cardtextheading"> Payload Dump </h4>
+        <p class="cardtext"> Follow these steps closely: <br>
+        <ol>
+          <li>Download the <a href="https://mirror.codebucket.de/yaap/"> latest YAAP build </a> for your device.</li>
+          <li>Download <a href="https://github.com/ssut/payload-dumper-go/releases">payload-dumper-go</a></li>
+          <li>Go to your extracted Platform Tools folder and, while holding the Shift key, right-click and then open terminal</li>
+          <li>Drag the payload-dumper-go file into the terminal, click in the terminal window, press the Spacebar, and then drag the YAAP .zip file into the terminal.</li>
+          <li>Press enter and wait until the script is done.</li>
+        </ol>
+        </p>
+        <h4 class="cardtextheading"> Finally, installation </h4>
+        <p class="cardtext"> Follow these steps closely: <br>
+        <ol>
+          <li>Put your phone into fastboot/bootloader</li>
+          <li>From the Payload Dump, locate the following files depending on your device:</li>
+          <ul>
+            <li>(Hotdogb) <em class="code">recovery.img</em></li>
+            <li>(Other) <em class="code">boot.img</em></li>
+          </ul>
+          Then be ready to drop this file in the terminal during the next step.<br>
+          <li>Then, open a terminal and type the following, depending on your device:</li>
+          <ul>
+            <li>(Hotdogb) <em class="code">fastboot flash recovery recovery.img</em></li>
+            <li>(Other) <em class="code">fastboot flash boot boot.img</em></li>
+          </ul>
+          Then press enter and wait for the command to finish executing.</li>
+          <li>Reboot to recovery by entering this command: fastboot reboot recovery</li>
+          <li>In recovery, wipe system storage</li>
+        </ol>
+        </p>
+      </div>
+      <div class="cardsection">
+        <h3 class="cardsectiontitle" id="report"> Report Bugs </h3>
+      </div>
+      <div class="cardsection">
+        <h3 class="cardsectiontitle" id="magisk"> Magisk </h3>
+        <h4 class="cardtextheading"> Installing Magisk for the first time </h4>
+        <ol>
+          <li>Get boot.img by using #payload_dumper</li>
+          <li>Patch stock boot.img using the magisk app (copy it to your device)</li>
+          <li>Flash on fastboot with fastboot flash boot magisk_patched_xxx.img</li>
+        </ol>
+        <h4 class="cardtextheading"> Update via OTA and retain Magisk </h4>
+        <ul>
+          <li>Just OTA as usual and when OTA is done (before rebooting) install from magisk app to inactive slot.</li>
+        </ul>
+        <h4 class="cardtextheading"> Pass Safetynet </h4>
+        <ol>
+          <li>Fully add gms, gpay and play store to deny list</li>
+          <li>clear storage for gpay and play store (if doesn't work after reboot in 3. also clear gms)</li>
+          <li>Reboot</li>
+        </ol>
+      </div>
+      <div class="cardsection">
+        <h3 class="cardsectiontitle" id="faqs"> FAQs </h3>
+
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <a href="https://github.com/robotwombat/projectpenguin" style="font-weight: normal;"> Made with ❤️ by Robotwombat </a>
+  </div>
+</body>
+
+</html>
