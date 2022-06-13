@@ -24,6 +24,12 @@ li {
   margin: 10px 0px 10px 0px;
 }
 
+div.backbutton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 hr.instructiondivider {
   margin: none;
   visibility: hidden;
@@ -333,6 +339,15 @@ h4.cardtextheading {
     button:hover {
       background-color: white;
       color: black;
+    }
+
+    button.back {
+      background-color: white;
+      color:black;
+    }
+
+    button.back:hover {
+      background-color: green;
     }
 
     div.cardsection {
