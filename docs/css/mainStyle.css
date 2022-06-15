@@ -3,6 +3,12 @@
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 }
+@font-face {
+  src: url("../fonts/ProductSans-Regular.ttf");
+  font-family: "productsans";
+  font-weight: normal;
+}
+
   /* ---------- Body ---------- */
   body {
     text-align: center;
@@ -12,10 +18,12 @@
   /* ---------- Header ---------- */
   div.header {
     width: auto;
+    font-family: productsans;
     margin: 0px 1px 1em 1px;
     padding-top: 1em;
     padding-bottom: 1.5em;
     border: 2px solid black;
+    font-family: productsans;
     border-top: 0px;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
@@ -27,7 +35,7 @@
     font-size: 0.85em;
     width: 100%;
     text-align: center;
-    font-family: Arial;
+    font-family: productsans;
   }
   /* ---------- Cards ---------- */
   div.cardholder {
@@ -161,8 +169,8 @@
     width: auto;
     margin: 5px 1px 5px 1px;
     padding: 5px 10px 5px 10px;
-    font-family: Arial;
     font-weight: bold;
+    font-family: Arial;
     cursor: pointer;
     transition: 0.2s;
   }
@@ -237,6 +245,9 @@
   /* ---------- Images ---------- */
   img.headerlogo {
     margin-top: 0em;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 50%;
   }
 
 /*--------------- Light mode colors ---------------*/
@@ -333,7 +344,7 @@
   /* Buttons */
   button {
     background-color: #0f0f0f;
-    color: white;
+    color: #ffffffe0;
   }
   button:hover {
     background-color: white;
