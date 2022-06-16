@@ -9,6 +9,12 @@
   font-weight: normal;
 }
 
+@font-face {
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-family: "Roboto-Medium";
+  font-weight: normal;
+}
+
   /* ---------- Body ---------- */
   body {
     text-align: center;
@@ -22,7 +28,7 @@
     margin: 0px 1px 1em 1px;
     padding-top: 1em;
     padding-bottom: 1.5em;
-    border: 2px solid black;
+    !border: 2px solid black;
     font-family: productsans;
     border-top: 0px;
     border-bottom-left-radius: 35px;
@@ -47,16 +53,12 @@
   }
   div.card {
     padding: 2.5em 2.5em 2.5em 2.5em;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
+    !border: 2px solid black;
     border-radius: 16px;
   }
   div.widercard {
     padding: 2.5em 1em 2.5em 1em;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
+    !border: 2px solid black;
     border-radius: 16px;
   }
   div.cardsection {
@@ -163,14 +165,14 @@
   }
   button {
     text-align: center;
-    border-style: solid;
+    border-style: hidden;
     border-color: black;
     border-radius: 15px;
     width: auto;
     margin: 5px 1px 5px 1px;
-    padding: 5px 10px 5px 10px;
-    font-weight: bold;
-    font-family: Arial;
+    padding: 7px 15px 7px 15px;
+    font-weight: normal;
+    font-family: Roboto-Medium;
     cursor: pointer;
     transition: 0.2s;
   }
@@ -283,8 +285,8 @@
   }
   /* Buttons */
   button {
-    background-color: white;
-    color: black;
+    background-color: #aadddd;
+    color: #0e2323;
   }
   button:hover {
     color: white;
