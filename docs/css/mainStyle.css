@@ -3,6 +3,7 @@
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 }
+
 @font-face {
   src: url("../fonts/ProductSans-Regular.ttf");
   font-family: "productsans";
@@ -20,6 +21,7 @@
     text-align: center;
     font-family: Arial;
     margin: 0px 0px 0px 0px;
+    box-sizing: border-box;
   }
   /* ---------- Header ---------- */
   div.header {
@@ -53,14 +55,14 @@
   div.cardholder {
     margin-top: 10px;
     display: inline-grid;
-    grid-column-gap: 10px;
+    grid-column-gap: 15px;
     grid-row-gap: 15px;
-    width: auto;
   }
   div.card {
     padding: 2.5em 2.5em 2.5em 2.5em;
     border: 2px hidden black;
     border-radius: 16px;
+    box-sizing: border-box;
   }
   div.widercard {
     padding: 2.5em 1em 2.5em 1em;
@@ -77,16 +79,17 @@
   /* Desktop view */
   @media (min-width: 500px) {
     div.cardholder {
-      grid-template-columns: 50% 50%;
+      grid-template-columns: auto auto;
       min-width: 0%;
       max-width: 100%;
+      width: 85vw;
     }
     div.card {
-      width: 400px;
+      width: auto;
       height: auto;
     }
     div.widercard {
-      width: 900px;
+      width: 80vw;
       height: auto;
     }
   }
