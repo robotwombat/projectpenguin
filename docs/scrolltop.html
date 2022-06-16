@@ -7,21 +7,28 @@
 </head>
 
 <body>
-  <button id="scrollTop" class="scrollTop" type="button" onclick="topFunction()">^</button>
+  <button id="scrollTop" class="scrollTop" type="button" onclick="topFunction()"><img class="scrolltop" src="./images/scroll-to-top-icon.svg"></img></button>
+  <img src="./images/crane-emoji.svg"></img>
+  <img src="./images/crane-emoji.svg"></img>
+  <img src="./images/crane-emoji.svg"></img>
   <script>
     //Get the button:
     mybutton = document.getElementById("scrollTop");
+
+    clicked = false;
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {
       scrollFunction()
     };
+
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.className = "scrollTop";
+          mybutton.style.display = "block";
+        } else {
+          mybutton.className = "scrollTopOut";
+        }
     }
 
     // When the user clicks on the button, scroll to the top of the document
@@ -30,6 +37,8 @@
         top: 0,
         behavior: 'smooth'
       });
+      mybutton.className = "scrollTopOut";
+      clicked = true;
     }
   </script>
 </body>

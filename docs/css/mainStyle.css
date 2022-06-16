@@ -202,6 +202,27 @@
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
+
+  button.scrollTopOut {
+    display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+    width: 80px;
+    height: 80px;
+    opacity: 100%;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin: 5px 1px 5px 1px;
+    padding: 15px 10px 0px 10px;
+    cursor: pointer;
+    animation-name: sizeout;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
   @keyframes sizein {
     0% {
       transform: scale(0%);
@@ -212,6 +233,19 @@
     100% {
       transform: scale(75%);
       opacity: 100%;
+    }
+  }
+  @keyframes sizeout {
+    0% {
+      transform: scale(75%);
+      opacity: 100%
+    }
+    50% {
+      opacity: 0%;
+    }
+    100% {
+      transform: scale(0%);
+      opacity: 0%;
     }
   }
   /* Desktop view */
@@ -306,6 +340,15 @@
   button.scrollTop {
     background-color: white;
     color: black;
+  }
+  button.scrollTopOut {
+    background-color: white;
+    color: black;
+  }
+  img.scrolltop {
+    width: 45px;
+    height: auto;
+    margin-bottom: 10px;
   }
   /* Text */
   em.code {
