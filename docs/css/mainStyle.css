@@ -295,6 +295,7 @@
   button.back {
     background-color: white;
     color: black;
+    border: 2px solid black;
   }
   button.back:hover {
     background-color: lightblue;
@@ -345,8 +346,8 @@
   }
   /* Buttons */
   button {
-    background-color: #0f0f0f;
-    color: #ffffffe0;
+    background-color: #1c4646;
+    color: #aadddd;
   }
   button:hover {
     background-color: white;
