@@ -290,8 +290,9 @@
     color: #0e2323;
   }
   button:hover {
+    background-color: #57bcbc;
     color: white;
-    background-color: black;
+    box-shadow: 0px 0px 3px lightgrey;
   }
   button.back {
     background-color: white;
