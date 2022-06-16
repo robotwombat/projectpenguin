@@ -34,6 +34,12 @@
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
   }
+  img.headerlogo {
+    margin-top: 0em;
+    background-color: lightblue;
+    !border: 2px solid black;
+    border-radius: 50%;
+  }
   /* ---------- Footer ---------- */
   div.footer {
     padding-top: 5em;
@@ -76,7 +82,7 @@
       max-width: 100%;
     }
     div.card {
-      width: 200px;
+      width: 400px;
       height: auto;
     }
     div.widercard {
@@ -165,8 +171,7 @@
   }
   button {
     text-align: center;
-    border-style: hidden;
-    border-color: black;
+    border: 2px hidden black;
     border-radius: 15px;
     width: auto;
     margin: 5px 1px 5px 1px;
@@ -245,12 +250,7 @@
     text-decoration: none;
   }
   /* ---------- Images ---------- */
-  img.headerlogo {
-    margin-top: 0em;
-    background-color: lightblue;
-    !border: 2px solid black;
-    border-radius: 50%;
-  }
+
 
 /*--------------- Light mode colors ---------------*/
 @media (prefers-color-scheme: light) {
