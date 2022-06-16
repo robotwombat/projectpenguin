@@ -25,10 +25,10 @@
   div.header {
     width: auto;
     font-family: productsans;
-    margin: 0px 1px 1em 1px;
+    margin: 0px 0px 1em 0px;
     padding-top: 1em;
     padding-bottom: 1.5em;
-    !border: 2px solid black;
+    border: 2px hidden black;
     font-family: productsans;
     border-top: 0px;
     border-bottom-left-radius: 35px;
@@ -37,7 +37,7 @@
   img.headerlogo {
     margin-top: 0em;
     background-color: lightblue;
-    !border: 2px solid black;
+    border: 2px hidden black;
     border-radius: 50%;
   }
   /* ---------- Footer ---------- */
@@ -59,12 +59,12 @@
   }
   div.card {
     padding: 2.5em 2.5em 2.5em 2.5em;
-    !border: 2px solid black;
+    border: 2px hidden black;
     border-radius: 16px;
   }
   div.widercard {
     padding: 2.5em 1em 2.5em 1em;
-    !border: 2px solid black;
+    border: 2px hidden black;
     border-radius: 16px;
   }
   div.cardsection {
