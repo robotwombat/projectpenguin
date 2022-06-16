@@ -248,7 +248,7 @@
   img.headerlogo {
     margin-top: 0em;
     background-color: lightblue;
-    border: 2px solid black;
+    !border: 2px solid black;
     border-radius: 50%;
   }
 
