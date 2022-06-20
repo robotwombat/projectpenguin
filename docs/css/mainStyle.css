@@ -227,6 +227,7 @@ button.scrollTop {
   margin: 5px 1px 5px 1px;
   padding: 15px 10px 0px 10px;
   cursor: pointer;
+  backface-visibility: hidden;
   animation-name: sizein;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -361,11 +362,6 @@ img.scrolltop {
   }
 
   button.scrollTop {
-    background-color: white;
-    color: black;
-  }
-
-  button.scrollTopOut {
     background-color: white;
     color: black;
   }

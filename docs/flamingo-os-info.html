@@ -68,34 +68,22 @@
           <li>You must first unlock the bootloader (Google this)</li>
         </ul>
         </p>
-        <h4 class="cardtextheading"> Payload Dump </h4>
+        <h4 class="cardtextheading"> Installation </h4>
         <p class="cardtext"> Follow these steps closely: <br>
         <ol>
-          <li>Download the <a href="https://mirror.codebucket.de/yaap/"> latest YAAP build </a> for your device.</li>
-          <li>Download <a href="https://github.com/ssut/payload-dumper-go/releases">payload-dumper-go</a></li>
+          <li>Download the <a href="https://sourceforge.net/projects/kosp/files/A12/"> latest Flamingo OS build </a> (ending in -img.zip) for your device.</li>
+          <li>Reboot your phone into fastboot/bootloader</li>
           <li>Go to your extracted Platform Tools folder and, while holding the Shift key, right-click and then open terminal</li>
-          <li>Drag the payload-dumper-go file into the terminal, click in the terminal window, press the Spacebar, and then drag the YAAP .zip file into the terminal.</li>
-          <li>Press enter and wait until the script is done.</li>
-        </ol>
-        </p>
-        <h4 class="cardtextheading"> Finally, installation </h4>
-        <p class="cardtext"> Follow these steps closely: <br>
-        <ol>
-          <li>Put your phone into fastboot/bootloader</li>
-          <li>From the Payload Dump, locate the following files depending on your device:</li>
+          <li>In the terminal type:</li>
           <ul>
-            <li>(Hotdogb) <em class="code">recovery.img</em></li>
-            <li>(Other) <em class="code">boot.img</em></li>
+            <li><em class="code">fastboot update</em></li>
           </ul>
-          Then be ready to drop this file in the terminal during the next step.<br>
-          <li>Then, open a terminal and type the following, depending on your device:</li>
+          Then, press the spacebar, drag the .zip file into the terminal, and press enter.
+          <li>When the script finishes executing, reboot to recovery using this command:</li>
           <ul>
-            <li>(Hotdogb) <em class="code">fastboot flash recovery recovery.img</em></li>
-            <li>(Other) <em class="code">fastboot flash boot boot.img</em></li>
+            <li><em class="code">fastboot reboot recovery</em></li>
           </ul>
-          Then press enter and wait for the command to finish executing.</li>
-          <li>Reboot to recovery by entering this command: fastboot reboot recovery</li>
-          <li>In recovery, wipe system storage</li>
+          <li>In recovery, format data and choose F2FS. Then done!</li>
         </ol>
         </p>
       </div>
