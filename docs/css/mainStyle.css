@@ -63,6 +63,16 @@ div.cardholder {
   grid-row-gap: 15px;
 }
 
+div.singlecolumncardholder {
+  margin-top: 10px;
+  display: inline-grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: auto;
+  width: auto;
+}
+
+
 div.card {
   padding: 2.5em 2.5em 2.5em 2.5em;
   border: 2px hidden black;
@@ -70,7 +80,7 @@ div.card {
   box-sizing: border-box;
 }
 
-div.widercard {
+div.widecard {
   padding: 2.5em 1em 2.5em 1em;
   border: 2px hidden black;
   border-radius: 16px;
@@ -98,7 +108,7 @@ div.cardsection {
     height: auto;
   }
 
-  div.widercard {
+  div.widecard {
     width: 80vw;
     height: auto;
   }
@@ -118,7 +128,7 @@ div.cardsection {
     height: auto;
   }
 
-  div.widercard {
+  div.widecard {
     margin: 0px 0.5em 0px 0.5em;
     width: auto;
     height: auto;
@@ -127,7 +137,7 @@ div.cardsection {
 
 h3.cardsectiontitle {
   margin-top: 0;
-  border-radius: 10px;
+  border-radius: 14px;
   padding: 10px 0px 10px 0px;
 }
 
@@ -164,8 +174,8 @@ p.cardtext {
   text-align: left;
   line-height: 1.5em;
   margin-top: 0.3em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 em.code {
@@ -186,8 +196,8 @@ ol.cardtext {
 h4.cardtextheading {
   text-align: left;
   margin-bottom: 0.3em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /* ---------- Buttons ---------- */
@@ -316,13 +326,13 @@ img.scrolltop {
     background-color: #F0F9F9;
   }
 
-  div.widercard {
+  div.widecard {
     background-color: #F0F9F9;
   }
 
   h3.cardsectiontitle {
-    background-color: black;
-    color: white;
+    background-color: #add;
+    color: #0e2323;
   }
 
   div.cardsection {
@@ -393,13 +403,13 @@ img.scrolltop {
     background-color: #222;
   }
 
-  div.widercard {
+  div.widecard {
     background-color: #222;
   }
 
   h3.cardsectiontitle {
-    background-color: black;
-    color: white;
+    background-color: #1c4646;
+    color: #aadddd;
   }
 
   div.cardsection {
