@@ -24,6 +24,13 @@ body {
   box-sizing: border-box;
 }
 
+hr {
+  width: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 14px;
+}
+
 /* ---------- Header ---------- */
 div.header {
   width: auto;
@@ -316,6 +323,9 @@ img.scrolltop {
     background: white;
   }
 
+  hr {
+    border: 1px solid black;
+  }
   /* Header */
   div.header {
     background-color: #F0F9F9;
@@ -391,6 +401,10 @@ img.scrolltop {
   body {
     background: #0f0f0f;
     color: white;
+  }
+
+  hr {
+    border: 1px solid grey;
   }
 
   /* Header */
