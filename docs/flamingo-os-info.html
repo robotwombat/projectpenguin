@@ -62,12 +62,14 @@
           <li> Extract the Platform Tools .zip and remember where you put it</li>
         </ul>
         </p>
+        <hr>
         <h4 class="cardtextheading"> Getting your phone ready </h4>
         <p class="cardtext">
         <ul>
           <li>You must first unlock the bootloader (Google this)</li>
         </ul>
         </p>
+        <hr>
         <h4 class="cardtextheading"> Installation </h4>
         <p class="cardtext"> Follow these steps closely: <br>
         <ol>
@@ -90,6 +92,21 @@
       <hr class="instructiondivider" id="report">
       <div class="cardsection">
         <h3 class="cardsectiontitle"> Report Bugs </h3>
+        <h4 class="cardtextheading"> Guidelines for Reporting a Bug </h4>
+        <p class="cardtext">
+          The best way to report bugs is by sending a message in the
+          <a href="https://t.me/kospOP7P" target="_blank" rel="noopener">Telegram Channel.</a><br><br>
+          If you want to report a bug:
+        <ol>
+          <li>First explain how to reproduce it.</li>
+          <li>Then, follow the steps below to provide us log.</li>
+        </ol>
+        </p>
+        <hr>
+        <h4 class="cardtextheading"> How to Generate Logs </h4>
+        <p class="cardtext">
+        </p>
+
       </div>
       <hr class="instructiondivider" id="magisk">
       <div class="cardsection">
@@ -100,10 +117,12 @@
           <li>Patch stock boot.img using the magisk app (copy it to your device)</li>
           <li>Flash on fastboot with fastboot flash boot magisk_patched_xxx.img</li>
         </ol>
+        <hr>
         <h4 class="cardtextheading"> Update via OTA and retain Magisk </h4>
         <ul>
           <li>Just OTA as usual and when OTA is done (before rebooting) install from magisk app to inactive slot.</li>
         </ul>
+        <hr>
         <h4 class="cardtextheading"> Pass Safetynet </h4>
         <ol>
           <li>Fully add gms, gpay and play store to deny list</li>
@@ -114,7 +133,39 @@
       <hr class="instructiondivider" id="faqs">
       <div class="cardsection">
         <h3 class="cardsectiontitle"> FAQs </h3>
-
+        <h4 class="cardtextheading"> Is there a fix for the blackscreen issue? </h4>
+        <p class="cardtext">Blackscreen issue has been a thing since 12. Here's what happens:<br>
+          When you unlock with fingerprint, under rare circumstances, the high brightness mode
+          (which gets triggered for the period you press the finger) does not get turned off after unlocking (usually it does).
+          So if you lock your screen at this point then it'll not turn on without a reboot.<br><br>
+          There is a workaround:
+        </p>
+        <ul>
+          <li>Immediately after you notice that screen is stuck at high brightness, restart systemui instead of locking.</li>
+          <li>Then unlock with fingerprint and it will work as usual.</li>
+          <li>If you did lock, then try unlocking your device with pin or whatever (have to rely on muscle memory since you can't see your input).</li>
+        </ul>
+        <p class="cardtext">
+          No one has been able to reproduce the said issue reliably so don't expect any fixes. Cheers.
+        </p>
+        <hr>
+        <h4 class="cardtextheading"> How can I see the changelog? </h4>
+        <p class="cardtext">
+          You can view changelogs for each device <a href="https://github.com/AOSP-Krypton/ota">here</a>.
+        </p>
+        <hr>
+        <h4 class="cardtextheading"> Can face unlock ever be added? </h4>
+        <p class="cardtext">
+          No, face unlock will never be a thing unless google implements it.
+        </p>
+        <hr>
+        <h4 class="cardtextheading"> How can I improve fingerprint performance? </h4>
+        <p class="cardtext">
+          Enrollment can give you various accuracy results, and everyone's experience with fp is
+          therefore different. The workaround is to enroll the same finger multiple times (3-4).
+          Basically keep enrolling the same finger until you literally can't enroll it anymore
+        </p>
+        <hr>
       </div>
     </div>
   </div>
