@@ -3,7 +3,7 @@
 
 <!-- Created by robotwombat -->
 
-<head>
+<head prefix="og: https://ogp.me/ns#">
   <!-- Import CSS -->
   <link rel="stylesheet" href="css/mainStyle.css">
   <!-- Scale page to display width -->
@@ -35,6 +35,10 @@
   <meta name="application-name" content="Project Penguin">
   <meta name="msapplication-TileColor" content="#33cdc6">
   <meta name="theme-color" content="#33cdc6">
+  <!-- Link preview stuff -->
+  <meta property="og:title" content="Flamingo OS Info" />
+  <meta property="og:description" content="Everything you need to know about Flamingo OS for the OnePlus 7 Series." />
+  <meta property="og:image" content="./images/flamingo-os-logo.jpg">
 </head>
 
 <body>
@@ -237,7 +241,7 @@
         <h4 class="cardtextheading">How do I get Widevine L1?</h4>
         <p class="cardtext">
           Note: you only need to do this once
-          <ol>
+        <ol>
           <li>Flash OOS 11 stable. eg.11.0.5.1</li>
           <li>Flash Magisk then enable Zygisk + denylist.(in denylist you should
             select show system apps in three-dot menu,then search gms,
@@ -249,7 +253,7 @@
           <li>Verify if you have L1 working using app like DRM info.</li>
           <li>Flash custom ROM and you should have L1 there as well.</li>
         </ol>
-      </p>
+        </p>
       </div>
     </div>
   </div>
