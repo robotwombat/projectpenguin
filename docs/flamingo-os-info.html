@@ -88,6 +88,15 @@
           <li>In recovery, format data and choose F2FS. Then done!</li>
         </ol>
         </p>
+        <hr>
+        <h4 class="cardtextheading"> Updating </h4>
+        <p class="cardtext">
+        <ul>
+          <li>If unrooted, you can easily install incremental updates via the Flamingo Updater app found at Settings > System > Updater</li>
+          <li>If rooted, you will need to install the full ROM file.
+            You can do this by choosing the 'Local Upgrade' option in the 3-dot menu of the Flamingo Updater app.</li>
+        </ul>
+        </p>
       </div>
       <hr class="instructiondivider" id="report">
       <div class="cardsection">
@@ -105,6 +114,54 @@
         <hr>
         <h4 class="cardtextheading"> How to Generate Logs </h4>
         <p class="cardtext">
+          Use the following command: <br>
+          <em class="code">adb logcat -b all -d > logcat.log</em><br>
+          And send the file saved "logcat.log" to the Telegram group<br>
+          <br>
+          Or use inbuilt MatlogX app if you can't use adb right now.<br>
+          For MatlogX logs will be saved in a matlogx folder under the directory you choose at startup.
+        </p>
+        <hr>
+        <h4 class="cardtextheading"> How to get Crashdump logs (Windows only)</h4>
+        <p class="cardtext">
+          If you experience a CrashDump, please send us logs by doing the following...
+        <ol>
+          <li> Download and Install QPST:<br>
+            <a href="https://qpsttool.com/category/download" target="_blank" rel="noopener">https://qpsttool.com/category/download</a>
+          </li>
+
+          <li>Ensure proper OP Drivers<br>
+            Qualcomm HS_USB
+          </li>
+
+          <li>Launch Utility
+            <ul>
+              <li>Start > QPST > QPST Configuration</li>
+            </ul>
+          </li>
+
+          <li>Dump Logs
+            <ul>
+              <li>While on CrashDump screen, plug phone into USB</li>
+              <li>Ports tab will display a progress bar and Sahara Memory Dump</li>
+            </ul>
+          </li>
+
+          <li>Retrive and Upload
+            <ul>
+              <li>Click Help > Open Log File Directory</li>
+              <li>Browse to Sahara > Port_COM#</li>
+              <li>Paste contents of KMSG.txt to katb.in</li>
+              <li>Save and send us the URL</li>
+            </ul>
+          </li>
+        </ol>
+        </p>
+        <p class="cardtext">
+          Troubleshooting<br>
+          During CrashDump screen, Device Manager should list device as Qualcomm HS-USB Diagnostics 900E.
+          If it does not, right click > Uninstall Device > Delete the driver software for this device
+          Reboot and install above driver set
         </p>
 
       </div>
@@ -151,10 +208,10 @@
         <hr>
         <h4 class="cardtextheading"> How can I see the changelog? </h4>
         <p class="cardtext">
-          You can view changelogs for each device <a href="https://github.com/AOSP-Krypton/ota">here</a>.
+          You can view changelogs for each device <a href="https://github.com/FlamingoOS-Devices/ota">here</a>.
         </p>
         <hr>
-        <h4 class="cardtextheading"> Can face unlock ever be added? </h4>
+        <h4 class="cardtextheading"> Can face unlock be added? </h4>
         <p class="cardtext">
           No, face unlock will never be a thing unless google implements it.
         </p>
@@ -166,6 +223,33 @@
           Basically keep enrolling the same finger until you literally can't enroll it anymore
         </p>
         <hr>
+        <h4 class="cardtextheading"> Where can I find GCam ports? </h4>
+        <p class="cardtext">
+          You can find lots of different Google Camera ports at <a href="https://www.celsoazevedo.com/files/android/p/gcam-oneplus-7-t-pro/">GCam Hub</a>.
+        </p>
+        <hr>
+        <h4 class="cardtextheading"> My system colors are no longer changing based on my wallpaper? </h4>
+        <p class="cardtext">
+          This is easy to fix, just execute the following ADB command in a terminal:
+          <br><em class="code">adb shell settings delete secure theme_customization_overlay_packages</em>
+        </p>
+        <hr>
+        <h4 class="cardtextheading">How do I get Widevine L1?</h4>
+        <p class="cardtext">
+          Note: you only need to do this once
+          <ol>
+          <li>Flash OOS 11 stable. eg.11.0.5.1</li>
+          <li>Flash Magisk then enable Zygisk + denylist.(in denylist you should
+            select show system apps in three-dot menu,then search gms,
+            select com.google.android.gms and .gms.unstable)or use Magisk v23.0 for test purpose.</li>
+          <li>Reboot.</li>
+          <li>Verify if you have L1 working using app like DRM info.</li>
+          <li>Local upgrafe OOS 11 stable (preferably same build).</li>
+          <li>Reboot.</li>
+          <li>Verify if you have L1 working using app like DRM info.</li>
+          <li>Flash custom ROM and you should have L1 there as well.</li>
+        </ol>
+      </p>
       </div>
     </div>
   </div>
