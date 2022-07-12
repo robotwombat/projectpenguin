@@ -137,7 +137,7 @@ div.cardsection {
 
   div.widecard {
     margin: 0px 0.5em 0px 0.5em;
-    width: auto;
+    width: 85vw;
     height: auto;
   }
 }
