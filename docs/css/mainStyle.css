@@ -311,7 +311,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a:hover.headerlogo {
+a:hover.clickableimage {
   opacity: 1.0;
   text-decoration: none;
 }
