@@ -38,7 +38,6 @@
   <!-- Link preview stuff -->
   <meta property="og:title" content="Flamingo OS Info" />
   <meta property="og:description" content="Everything you need to know about Flamingo OS for the OnePlus 7 Series." />
-  <meta property="og:image" content="./images/flamingo-os-logo.jpg">
 </head>
 
 <body>
@@ -77,7 +76,7 @@
         <h4 class="cardtextheading"> Installation </h4>
         <p class="cardtext"> Follow these steps closely: <br>
         <ol>
-          <li>Download the <a href="https://sourceforge.net/projects/kosp/files/A12/"> latest Flamingo OS build </a> (ending in -img.zip) for your device.</li>
+          <li>Download the <a href="https://flamingo.e11z.net/A12.1"> latest Flamingo OS build </a> (ending in -fastboot.zip) for your device.</li>
           <li>Reboot your phone into fastboot/bootloader</li>
           <li>Go to your extracted Platform Tools folder and, while holding the Shift key, right-click and then open terminal</li>
           <li>In the terminal type:</li>
@@ -89,7 +88,9 @@
           <ul>
             <li><em class="code">fastboot reboot recovery</em></li>
           </ul>
-          <li>In recovery, format data and choose F2FS. Then done!</li>
+          <li>In recovery, format data.
+            (Note: if you are given the option to choose a file system when formatting, choose F2FS).</li>
+          <li>Finally, boot into the OS and you are done!</li>
         </ol>
         </p>
         <hr>
@@ -174,8 +175,8 @@
         <h3 class="cardsectiontitle"> Magisk </h3>
         <h4 class="cardtextheading"> Installing Magisk for the first time </h4>
         <ol>
-          <li>Get boot.img by using #payload_dumper</li>
-          <li>Patch stock boot.img using the magisk app (copy it to your device)</li>
+          <li>Download the latest boot.img for your device <a href="https://flamingo.e11z.net/A12.1" target="_blank">here</a>.</li>
+          <li>Patch the downloaded boot.img using the Magisk app (copy it to your device)</li>
           <li>Flash on fastboot with fastboot flash boot magisk_patched_xxx.img</li>
         </ol>
         <hr>
