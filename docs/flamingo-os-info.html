@@ -58,7 +58,7 @@
         <h3 class="cardsectiontitle"> Installation </h3>
         <h4 class="cardtextheading"> Getting your computer ready </h4>
         <p class="cardtext"> If you're on Windows:<br>
-        <ul>
+        <ul class="cardtext">
           <li> Uninstall OnePlus drivers </li>
           <li> Check for and install all Windows updates</li>
           <li> Download Google's <a href="https://developer.android.com/studio/releases/platform-tools#downloads">Platform Tools</a></li>
@@ -68,24 +68,24 @@
         <hr>
         <h4 class="cardtextheading"> Getting your phone ready </h4>
         <p class="cardtext">
-        <ul>
+        <ul class="cardtext">
           <li>You must first unlock the bootloader (Google this)</li>
         </ul>
         </p>
         <hr>
         <h4 class="cardtextheading"> Installation </h4>
         <p class="cardtext"> Follow these steps closely: <br>
-        <ol>
+        <ol class="cardtext">
           <li>Download the <a href="https://flamingo.e11z.net/A12.1"> latest Flamingo OS build </a> (ending in -fastboot.zip) for your device.</li>
           <li>Reboot your phone into fastboot/bootloader</li>
           <li>Go to your extracted Platform Tools folder and, while holding the Shift key, right-click and then open terminal</li>
           <li>In the terminal type:</li>
-          <ul>
+          <ul class="cardtext">
             <li><em class="code">fastboot update</em></li>
           </ul>
           Then, press the spacebar, drag the .zip file into the terminal, and press enter.
           <li>When the script finishes executing, reboot to recovery using this command:</li>
-          <ul>
+          <ul class="cardtext">
             <li><em class="code">fastboot reboot recovery</em></li>
           </ul>
           <li>In recovery, format data.
@@ -96,7 +96,7 @@
         <hr>
         <h4 class="cardtextheading"> Updating </h4>
         <p class="cardtext">
-        <ul>
+        <ul class="cardtext">
           <li>If unrooted, you can easily install incremental updates via the Flamingo Updater app found at Settings > System > Updater</li>
           <li>If rooted, you will need to install the full ROM file.
             You can do this by choosing the 'Local Upgrade' option in the 3-dot menu of the Flamingo Updater app.</li>
@@ -111,7 +111,7 @@
           The best way to report bugs is by sending a message in the
           <a href="https://t.me/kospOP7P" target="_blank" rel="noopener">Telegram Channel.</a><br><br>
           If you want to report a bug:
-        <ol>
+        <ol class="cardtext">
           <li>First explain how to reproduce it.</li>
           <li>Then, follow the steps below to provide us log.</li>
         </ol>
@@ -130,7 +130,7 @@
         <h4 class="cardtextheading"> How to get Crashdump logs (Windows only)</h4>
         <p class="cardtext">
           If you experience a CrashDump, please send us logs by doing the following...
-        <ol>
+        <ol class="cardtext">
           <li> Download and Install QPST:<br>
             <a href="https://qpsttool.com/category/download" target="_blank" rel="noopener">https://qpsttool.com/category/download</a>
           </li>
@@ -140,20 +140,20 @@
           </li>
 
           <li>Launch Utility
-            <ul>
+            <ul class="cardtext">
               <li>Start > QPST > QPST Configuration</li>
             </ul>
           </li>
 
           <li>Dump Logs
-            <ul>
+            <ul class="cardtext">
               <li>While on CrashDump screen, plug phone into USB</li>
               <li>Ports tab will display a progress bar and Sahara Memory Dump</li>
             </ul>
           </li>
 
           <li>Retrive and Upload
-            <ul>
+            <ul class="cardtext">
               <li>Click Help > Open Log File Directory</li>
               <li>Browse to Sahara > Port_COM#</li>
               <li>Paste contents of KMSG.txt to katb.in</li>
@@ -174,19 +174,19 @@
       <div class="cardsection">
         <h3 class="cardsectiontitle"> Magisk </h3>
         <h4 class="cardtextheading"> Installing Magisk for the first time </h4>
-        <ol>
+        <ol class="cardtext">
           <li>Download the latest boot.img for your device <a href="https://flamingo.e11z.net/A12.1" target="_blank">here</a>.</li>
           <li>Patch the downloaded boot.img using the Magisk app (copy it to your device)</li>
           <li>Flash on fastboot with fastboot flash boot magisk_patched_xxx.img</li>
         </ol>
         <hr>
         <h4 class="cardtextheading"> Update via OTA and retain Magisk </h4>
-        <ul>
+        <ul class="cardtext">
           <li>Just OTA as usual and when OTA is done (before rebooting) install from magisk app to inactive slot.</li>
         </ul>
         <hr>
         <h4 class="cardtextheading"> Pass Safetynet </h4>
-        <ol>
+        <ol class="cardtext">
           <li>Fully add gms, gpay and play store to deny list</li>
           <li>clear storage for gpay and play store (if doesn't work after reboot in 3. also clear gms)</li>
           <li>Reboot</li>
@@ -202,7 +202,7 @@
           So if you lock your screen at this point then it'll not turn on without a reboot.<br><br>
           There is a workaround:
         </p>
-        <ul>
+        <ul class="cardtext">
           <li>Immediately after you notice that screen is stuck at high brightness, restart systemui instead of locking.</li>
           <li>Then unlock with fingerprint and it will work as usual.</li>
           <li>If you did lock, then try unlocking your device with pin or whatever (have to rely on muscle memory since you can't see your input).</li>
@@ -242,7 +242,7 @@
         <h4 class="cardtextheading">How do I get Widevine L1?</h4>
         <p class="cardtext">
           Note: you only need to do this once
-        <ol>
+        <ol class="cardtext">
           <li>Flash OOS 11 stable. eg.11.0.5.1</li>
           <li>Flash Magisk then enable Zygisk + denylist.(in denylist you should
             select show system apps in three-dot menu,then search gms,

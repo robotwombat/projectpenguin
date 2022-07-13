@@ -197,7 +197,15 @@ ol.cardtext {
   line-height: 1.5em;
   margin-top: 0.3em;
   margin-left: 0em;
-  margin-right: 0.5em;
+  margin-right: 1em;
+}
+
+ul.cardtext {
+  text-align: left;
+  line-height: 1.5em;
+  margin-top: 0.3em;
+  margin-left: 0em;
+  margin-right: 1em;
 }
 
 h4.cardtextheading {
