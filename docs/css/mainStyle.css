@@ -8,12 +8,14 @@
   src: url("../fonts/ProductSans-Regular.ttf");
   font-family: "productsans";
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   src: url("../fonts/Roboto-Medium.ttf");
   font-family: "Roboto-Medium";
   font-weight: normal;
+  font-display: swap;
 }
 
 /* ---------- Body ---------- */
