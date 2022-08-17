@@ -183,6 +183,7 @@ p.cardtext {
   margin-top: 0.3em;
   margin-left: 1em;
   margin-right: 1em;
+  word-wrap: break-word;
 }
 
 em.code {
