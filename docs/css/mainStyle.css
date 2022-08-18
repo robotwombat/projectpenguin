@@ -297,6 +297,11 @@ hr.instructiondivider {
   margin: 0px;
 }
 
+hr.cardheader {
+  width: 2.5em;
+  margin: 10px auto 10px auto;
+}
+
 /* ---------- Links ---------- */
 a:link {
   color: black;
@@ -403,6 +408,11 @@ img.scrolltop {
   em.code {
     background-color: white;
   }
+
+  /* Dividers */
+  hr.cardheader {
+    border: 1px solid gray;
+  }
 }
 
 /*--------------- Dark mode colors ---------------*/
@@ -486,5 +496,10 @@ img.scrolltop {
   em.code {
     color: black;
     background-color: grey;
+  }
+
+  /* Dividers */
+  hr.cardheader {
+    border: 1px solid lightgray;
   }
 }
