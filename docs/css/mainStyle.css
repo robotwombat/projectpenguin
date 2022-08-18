@@ -239,6 +239,10 @@ button {
   transition: 0.2s;
 }
 
+button.uniformsize {
+  width: 8em;
+}
+
 button.scrollTop {
   display: none;
   position: fixed;
