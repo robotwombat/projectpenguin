@@ -283,7 +283,7 @@ button.scrollTop {
 /* Desktop view */
 @media (min-width: 500px) {
   button.scrollTop {
-    visibility: hidden;
+    display: none;
   }
 }
 
