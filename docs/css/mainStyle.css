@@ -335,6 +335,58 @@ img.scrolltop {
   margin-bottom: 10px;
 }
 
+img.screenshots {
+  width: 200px;
+  border-radius: 16px;
+  animation-name: shrinkimage;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+img.screenshots:hover {
+  transform: scale(130%);
+  animation-name: enlargeimage;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+div.gallery {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-column-gap: 10px;
+  justify-content: center;
+}
+
+@keyframes enlargeimage {
+  0% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(130%);
+    box-shadow: 0px 0px 0px 1500px black;
+  }
+}
+
+@keyframes shrinkimage {
+  0% {
+    transform: scale(130%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes darken {
+  0% {
+    filter: brightness(100%);
+  }
+
+  100% {
+    filter: brightness(50%);
+  }
+}
 /*--------------- Light mode colors ---------------*/
 @media (prefers-color-scheme: light) {
 
