@@ -335,18 +335,7 @@ img.scrolltop {
 }
 
 img.screenshots {
-  width: 200px;
   border-radius: 16px;
-  animation-name: shrinkimage;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-img.screenshots:hover {
-  transform: scale(130%);
-  animation-name: enlargeimage;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 
 div.gallery {
@@ -355,6 +344,22 @@ div.gallery {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   justify-content: center;
+}
+
+/* Desktop view */
+@media (min-width: 500px) {
+  img.screenshots {
+    width: 200px;
+    animation-name: shrinkimage;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  img.screenshots:hover {
+    transform: scale(130%);
+    animation-name: enlargeimage;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
 }
 
 /* Mobile view */
