@@ -81,7 +81,6 @@ div.singlecolumncardholder {
   width: auto;
 }
 
-
 div.card {
   padding: 2.5em 2.5em 2.5em 2.5em;
   border: 2px hidden black;
@@ -352,41 +351,22 @@ img.screenshots:hover {
 
 div.gallery {
   display: grid;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: min-content min-content min-content min-content;
   grid-column-gap: 10px;
+  grid-row-gap: 10px;
   justify-content: center;
 }
 
-@keyframes enlargeimage {
-  0% {
-    transform: scale(100%);
+/* Mobile view */
+@media (max-width: 500px) {
+  div.gallery {
+    grid-template-columns: min-content;
   }
-
-  100% {
-    transform: scale(130%);
-    box-shadow: 0px 0px 0px 1500px black;
-  }
-}
-
-@keyframes shrinkimage {
-  0% {
-    transform: scale(130%);
-  }
-
-  100% {
-    transform: scale(100%);
+  img.screenshots {
+    width: 85vw;
   }
 }
 
-@keyframes darken {
-  0% {
-    filter: brightness(100%);
-  }
-
-  100% {
-    filter: brightness(50%);
-  }
-}
 /*--------------- Light mode colors ---------------*/
 @media (prefers-color-scheme: light) {
 
@@ -398,6 +378,7 @@ div.gallery {
   hr {
     border: 1px solid black;
   }
+
   /* Header */
   div.header {
     background-color: #F0F9F9;
@@ -468,6 +449,33 @@ div.gallery {
   /* Dividers */
   hr.cardheader {
     border: 1px solid gray;
+  }
+
+  /* Animations */
+  @keyframes enlargeimage {
+    0% {
+      transform: scale(100%);
+      box-shadow: 0px 0px 0px 1500px rgba(255, 255, 255, 0);
+      z-index: 999;
+    }
+
+    100% {
+      transform: scale(130%);
+      box-shadow: 0px 0px 0px 1500px rgba(255, 255, 255, 0.9);
+      z-index: 999;
+    }
+  }
+
+  @keyframes shrinkimage {
+    0% {
+      transform: scale(130%);
+      box-shadow: 0px 0px 0px 1500px rgba(255, 255, 255, 0.9);
+    }
+
+    100% {
+      transform: scale(100%);
+      box-shadow: 0px 0px 0px 1500px rgba(255, 255, 255, 0);
+    }
   }
 }
 
@@ -557,5 +565,32 @@ div.gallery {
   /* Dividers */
   hr.cardheader {
     border: 1px solid lightgray;
+  }
+
+  /* Animations */
+  @keyframes enlargeimage {
+    0% {
+      transform: scale(100%);
+      box-shadow: 0px 0px 0px 1500px rgba(0, 0, 0, 0);
+      z-index: 999;
+    }
+
+    100% {
+      transform: scale(130%);
+      box-shadow: 0px 0px 0px 1500px rgba(0, 0, 0, 0.9);
+      z-index: 999;
+    }
+  }
+
+  @keyframes shrinkimage {
+    0% {
+      transform: scale(130%);
+      box-shadow: 0px 0px 0px 1500px rgba(0, 0, 0, 0.9);
+    }
+
+    100% {
+      transform: scale(100%);
+      box-shadow: 0px 0px 0px 1500px rgba(0, 0, 0, 0);
+    }
   }
 }
