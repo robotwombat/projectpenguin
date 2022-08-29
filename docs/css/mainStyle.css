@@ -105,7 +105,7 @@ div.cardsection {
 /* Desktop view */
 @media (min-width: 500px) {
   div.cardholder {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     min-width: 0%;
     max-width: 100%;
     width: 85vw;
