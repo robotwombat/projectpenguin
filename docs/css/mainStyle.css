@@ -149,10 +149,19 @@ h3.cardsectiontitle {
   padding: 10px 0px 10px 0px;
 }
 
-img.card {
+img.cardicon {
   width: 5em;
   height: 5em;
   align-content: center;
+}
+
+img.cardlogo {
+  width: 5em;
+  height: 5em;
+  align-content: center;
+  border-radius:50%;
+  border: 2px
+  solid black
 }
 
 /* ---------- Text ---------- */
@@ -185,6 +194,10 @@ p.cardtext {
   margin-left: 1em;
   margin-right: 1em;
   word-wrap: break-word;
+}
+
+p.description {
+  font-size: 14px;
 }
 
 em.code {
