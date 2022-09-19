@@ -65,14 +65,32 @@ div.footer {
 }
 
 /* ---------- Cards ---------- */
-div.cardholder {
+div.twocolumncardholder {
   margin-top: 10px;
   display: inline-grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
 }
 
-div.singlecolumncardholder {
+div.onecolumncardholder {
+  margin-top: 10px;
+  display: inline-grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: auto;
+  width: auto;
+}
+
+div.twocolumncardholder {
+  margin-top: 10px;
+  display: inline-grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: auto;
+  width: auto;
+}
+
+div.threecolumncardholder {
   margin-top: 10px;
   display: inline-grid;
   grid-column-gap: 15px;
@@ -104,13 +122,20 @@ div.cardsection {
 
 /* Desktop view */
 @media (min-width: 500px) {
-  div.cardholder {
+  div.twocolumncardholder {
     grid-template-columns: auto auto;
     min-width: 0%;
     max-width: 100%;
     width: 85vw;
   }
 
+  div.threecolumncardholder {
+    grid-template-columns: auto auto auto;
+    min-width: 0%;
+    max-width: 100%;
+    width: 85vw;
+  }
+  
   div.card {
     width: auto;
     height: auto;
@@ -124,7 +149,7 @@ div.cardsection {
 
 /* Mobile view */
 @media (max-width: 500px) {
-  div.cardholder {
+  div.twocolumncardholder {
     grid-template-columns: 100%;
     min-width: 95%;
     max-width: 100%;

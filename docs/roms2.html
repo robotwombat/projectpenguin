@@ -11,7 +11,8 @@
   <!-- Header -->
   <div class="header">
     <a class="clickableimage" target="_top" href="./index.html">
-      <img class="headerlogo" src="images/penguin-emoji.svg" alt="Penguin Emoji Logo" style="width:100px; height:100px;">
+      <img class="headerlogo" src="images/penguin-emoji.svg" alt="Penguin Emoji Logo"
+        style="width:100px; height:100px;">
     </a>
     <h1 class="headertitle">Project Penguin</h1>
     <p class="header">Open-source, ad-free, forever.</p>
@@ -19,10 +20,39 @@
   <!-- Load in scroll top button -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    $(function() {
+    $(function () {
       var scrolltop = $("#scrolltop");
       scrolltop.load("scrolltop.html")
     });
+  </script>
+
+  <script type="text/javascript">
+    function toggle_card(name) {
+      var cardsArray = document.getElementsByClassName('card');
+      var classname;
+      var i;
+
+      // Reset the cards
+      reset_cards();
+
+      // Toggle the cards
+      for (i = 0; i < cardsArray.length; i++) {
+        classname = cardsArray[i].className;
+        if (classname.includes(name)) {
+          cardsArray[i].style.display = 'block';
+        }
+        else {
+          cardsArray[i].style.display = 'none';
+        }
+      }
+    }
+
+    function reset_cards() {
+      var cardsArray = document.getElementsByClassName('card');
+      for (i = 0; i < cardsArray.length; i++) {
+        cardsArray[i].style.display = 'block';
+      }
+    }
   </script>
   <!-- Page title and favicons -->
   <title> Custom ROMs | Project Penguin </title>
@@ -38,72 +68,95 @@
 </head>
 
 <body>
+  <button class="uniformsize type=" button" onclick="reset_cards();">All</button>
+  <button class="uniformsize type=" button" onclick="toggle_card('op7');">op7</button>
+  <button class="uniformsize type=" button" onclick="toggle_card('op7t');">op7t</button>
   <div id="scrolltop"></div>
-  <div class="cardholder">
-    <div class="card">
+  <div class="twocolumncardholder">
+    <div class="card op7">
       <img class="cardlogo" src="./images/flamingo-os-logo.jpg" style="border-radius:50%; border: 2px solid black;">
       <h3> Flamingo OS </h3>
       <p class="description">Android Version: 12.1</p>
-      <button class="uniformsize" type="button" onclick="window.location.href='flamingo-os-info.html'">Information</button><br>
-      <button class="uniformsize" type="button" onclick="window.open('https://downloads.e11z.net/flamingo', '_blank')">Downloads</button>
-      <button class="uniformsize" type="button" onclick="window.open('https://t.me/flamingo_op7series', '_blank')">Telegram</button>
+      <button class="uniformsize" type="button"
+        onclick="window.location.href='flamingo-os-info.html'">Information</button><br>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://downloads.e11z.net/flamingo', '_blank')">Downloads</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://t.me/flamingo_op7series', '_blank')">Telegram</button>
       <br>
-      <button class="uniformsize" type="button" onclick="window.open('https://github.com/flamingo-os', '_blank')">Source</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://github.com/flamingo-os', '_blank')">Source</button>
     </div>
-    <div class="card">
+    <div class="card op7">
       <img class="cardlogo" src="./images/yaap-logo.jpg">
       <h3> YAAP </h3>
       <p class="description">Android Version: 12.1</p>
       <button class="uniformsize" type="button" onclick="window.location.href='yaap-info.html'">Information</button><br>
-      <button class="uniformsize" type="button" onclick="window.open('https://mirror.codebucket.de/yaap/', '_blank')">Downloads</button>
-      <button class="uniformsize" type="button" onclick="window.open('https://t.me/yaapop7', '_blank')">Telegram</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://mirror.codebucket.de/yaap/', '_blank')">Downloads</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://t.me/yaapop7', '_blank')">Telegram</button>
       <br>
-      <button class="uniformsize" type="button" onclick="window.open('https://github.com/yaap', '_blank')">Source</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://github.com/yaap', '_blank')">Source</button>
     </div>
-    <div class="card">
+    <div class="card op7t">
       <img class="cardlogo" src="./images/paranoid-android-logo.jpg">
       <h3> Paranoid Android </h3>
       <p class="description">Android Version: 12.1</p>
       <button class="uniformsize" type="button" onclick="window.location.href='template.html'">Information</button><br>
-      <button class="uniformsize" type="button" onclick="window.open('https://paranoidandroid.co/', '_blank')">Downloads</button>
-      <button class="uniformsize" type="button" onclick="window.open('https://t.me/stayparanoid', '_blank')">Telegram</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://paranoidandroid.co/', '_blank')">Downloads</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://t.me/stayparanoid', '_blank')">Telegram</button>
       <br>
-      <button class="uniformsize" type="button" onclick="window.open('https://github.com/AOSPA', '_blank')">Source</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://github.com/AOSPA', '_blank')">Source</button>
     </div>
     <div class="card">
       <img class="cardlogo" src="./images/arrowos-logo.jpg">
       <h3> ArrowOS </h3>
       <p class="description">Android Version: 12.1</p>
       <button class="uniformsize" type="button" onclick="window.location.href='template.html'">Information</button><br>
-      <button class="uniformsize" type="button" onclick="window.open('https://arrowos.net/download', '_blank')">Downloads</button>
-      <button class="uniformsize" type="button" onclick="window.open('https://t.me/ArrowOSChat', '_blank')">Telegram</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://arrowos.net/download', '_blank')">Downloads</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://t.me/ArrowOSChat', '_blank')">Telegram</button>
       <br>
-      <button class="uniformsize" type="button" onclick="window.open('https://github.com/arrowos', '_blank')">Source</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://github.com/arrowos', '_blank')">Source</button>
     </div>
     <div class="card">
       <img class="cardlogo" src="./images/crdroid-logo.jpg">
       <h3> crDroid </h3>
       <p class="description">Android Version: 12.1</p>
       <button class="uniformsize" type="button" onclick="window.location.href='template.html'">Information</button><br>
-      <button class="uniformsize" type="button" onclick="window.open('https://crdroid.net/downloads', '_blank')">Downloads</button>
-      <button class="uniformsize" type="button" onclick="window.open('https://t.me/crDroidOP7Pro', '_blank')">Telegram</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://crdroid.net/downloads', '_blank')">Downloads</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://t.me/crDroidOP7Pro', '_blank')">Telegram</button>
       <br>
-      <button class="uniformsize" type="button" onclick="window.open('https://github.com/crdroidandroid', '_blank')">Source</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://github.com/crdroidandroid', '_blank')">Source</button>
     </div>
     <div class="card">
       <img class="cardlogo" src="./images/evolution-x-logo.jpg">
       <h3> EvolutionX </h3>
       <p class="description">Android Version: 13</p>
       <button class="uniformsize" type="button" onclick="window.location.href='template.html'">Information</button><br>
-      <button class="uniformsize" type="button" onclick="window.open('https://sourceforge.net/projects/evolutionx-guacamole/files/', '_blank')">Downloads</button>
-      <button class="uniformsize" type="button" onclick="window.open('https://t.me/evox_guacamole', '_blank')">Telegram</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://sourceforge.net/projects/evolutionx-guacamole/files/', '_blank')">Downloads</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://t.me/evox_guacamole', '_blank')">Telegram</button>
       <br>
-      <button class="uniformsize" type="button" onclick="window.open('https://github.com/Evolution-X', '_blank')">Source</button>
+      <button class="uniformsize" type="button"
+        onclick="window.open('https://github.com/Evolution-X', '_blank')">Source</button>
     </div>
   </div>
   <!-- Footer -->
   <div class="footer">
-    <a href="https://github.com/robotwombat/projectpenguin" style="font-weight: normal;"> Made with ❤️ by Robotwombat </a>
+    <a href="https://github.com/robotwombat/projectpenguin" style="font-weight: normal;"> Made with ❤️ by Robotwombat
+    </a>
   </div>
 </body>
 
