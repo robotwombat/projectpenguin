@@ -1,5 +1,5 @@
 # Project Penguin 🐧
-https://robotwombat.github.io/projectpenguin/
+https://projectpenguin.dev/
 
 ## Donate
 <a href="https://liberapay.com/robotwombat/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a><br>
